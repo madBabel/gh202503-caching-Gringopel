@@ -30,7 +30,7 @@ jobs:
               id: cache
               uses: actions/cache@v4
               with:
-                key: deps-node-modules-${{ hashFiles('my-app/package-lock.json') }}
+                key: deps-node-modules-${{hashFiles('my-app/package-lock.json') }}
                 path: my-app/node_modules
             
             - name: Unit test
